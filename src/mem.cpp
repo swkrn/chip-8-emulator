@@ -28,9 +28,9 @@ void Mem::set(std::uint16_t position, std::uint8_t value)
 }
 
 
-std::uint16_t Mem::get(std::uint16_t position)
+std::uint16_t Mem::get(std::uint16_t pc)
 {
-    return (mem[position] << 8) + mem[position + 1];
+    return (mem[pc] << 8) + mem[pc + 1];
 }
 
 void Mem::loadProgram(const std::string &filename)

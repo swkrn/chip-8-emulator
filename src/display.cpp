@@ -1,5 +1,6 @@
 #include "display.h"
 #include "config.h"
+#include <iostream>
 
 void Display::set(std::uint16_t x, std::uint16_t y, bool value)
 {

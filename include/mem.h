@@ -6,7 +6,7 @@
 
 class Mem {
     private:
-        std::uint8_t mem[Config::MEM_SIZE];
+        std::uint8_t mem[Config::MEM_SIZE] = {0};
         void loadFont();
 
     public:
